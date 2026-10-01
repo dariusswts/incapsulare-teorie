@@ -172,5 +172,10 @@ namespace ExempluCrud
             u.Varsta = varsta;
             return u;
         }
+
+        private void CrudForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="incapsulare-teorie/incapsulare-teorie.csproj" />
+  <Project Path="exemplu-crud/ExempluCrud.csproj" Id="7f3a9c21-5d48-4b16-9e07-2c8a1f6b4d93">
+    <BuildType Project="Debug" />
+  </Project>
+  <Project Path="incapsulare-teorie/incapsulare-teorie.csproj" Id="1b235a95-4434-4f02-bf87-c9653a9f7cad" />
 </Solution>
