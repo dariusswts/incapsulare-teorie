@@ -177,5 +177,10 @@ namespace ExempluCrud
         {
 
         }
+
+        private void grpDate_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

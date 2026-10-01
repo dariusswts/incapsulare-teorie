@@ -80,5 +80,10 @@ namespace incapsulare_teorie
             u.age = age;
             return u;
         }
+
+        private void UseriForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

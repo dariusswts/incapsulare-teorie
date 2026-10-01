@@ -14,12 +14,12 @@ namespace incapsulare_teorie
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Console.WriteLine("=============test========================");
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Masiniform());
+            //Console.WriteLine("=============test========================");
 
-            Useri();
+            //Useri();
         }
 
         static void Useri()

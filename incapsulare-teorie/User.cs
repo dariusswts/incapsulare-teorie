@@ -15,6 +15,15 @@ namespace incapsulare_teorie
         public string phoneNr;
         public int age;
 
+       
+
+
+        public void afisareNumae()
+        {
+            Console.WriteLine(username);
+        }
+       
+
         
 
     }

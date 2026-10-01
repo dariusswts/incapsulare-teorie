@@ -127,6 +127,7 @@ namespace ExempluCrud
             this.grpDate.TabIndex = 1;
             this.grpDate.TabStop = false;
             this.grpDate.Text = "Datele userului";
+            this.grpDate.Enter += new System.EventHandler(this.grpDate_Enter);
             // 
             // lblUsername
             // 
