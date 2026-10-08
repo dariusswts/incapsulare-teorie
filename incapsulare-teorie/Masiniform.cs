@@ -166,23 +166,45 @@ namespace incapsulare_teorie
         private void btnAdauga_Click(object sender, EventArgs e)
         {
        
-            dgvMasini.Rows.Add(txtBoxMarca);
+            dgvMasini.Rows.Add(
+            txtBoxMarca.Text,
+            txtBoxModel.Text,
+            txtBoxAnFab.Text,
+            txtBoxCapacitateM.Text,
+            txtBoxPret.Text,
+            txtBoxHP.Text
+            );
         }
+
+        private void btnSterge_Click(object sender, EventArgs e)
+        {
+            if (dgvMasini.CurrentRow == null)
+            {
+                MessageBox.Show("Selecteaza intai un rand.");
+                return;
+            }
+
+            dgvMasini.Rows.RemoveAt(dgvMasini.CurrentRow.Index);
+        }
+    }
 
         /*
         public Masina incarcaCampurile()
         {
-            if (txtBoxMarca.Text == "")
+            if (txtBoxMarca.Text == ""||txtBoxModel.Text==""||txtBoxAnFab.Text==""||txtBoxPret.Text==""||txtBoxHP.Text=="")
             {
-                MessageBox.Show("Marca nu poate fi gol.");
+                MessageBox.Show("AI GRIJA NU AI LASAT CASETE GOALE!!!!");
                 return null;
             }
-            if (txtBoxModel.Text == "")
-            {
-                MessageBox.Show("Model-ul nu poate fi gol");
-                return null;
-            }
-        }
-        */
+            Masina m=new Masina();
+            m.marca = txtBoxMarca.Text;
+            m.model = txtBoxModel.Text;
+            m.anfabricatie = txtBoxAnFab.;
+            m.pret= txtBoxPret.Text;
+           // m.horsepower = txtBoxHP.Text;
+
+           
+        }*/
+
     }
-}
+

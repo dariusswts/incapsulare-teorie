@@ -34,16 +34,17 @@
             this.txtBoxModel = new System.Windows.Forms.TextBox();
             this.txtBoxMarca = new System.Windows.Forms.TextBox();
             this.grbDateM = new System.Windows.Forms.GroupBox();
-            this.txtBoxAnFab = new System.Windows.Forms.TextBox();
-            this.txtBoxHP = new System.Windows.Forms.TextBox();
-            this.txtBoxPret = new System.Windows.Forms.TextBox();
-            this.txtBoxCapacitateM = new System.Windows.Forms.TextBox();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblModel = new System.Windows.Forms.Label();
-            this.lblAnFabricatie = new System.Windows.Forms.Label();
-            this.lblCP = new System.Windows.Forms.Label();
-            this.lblPret = new System.Windows.Forms.Label();
             this.lblHP = new System.Windows.Forms.Label();
+            this.lblPret = new System.Windows.Forms.Label();
+            this.lblCP = new System.Windows.Forms.Label();
+            this.lblAnFabricatie = new System.Windows.Forms.Label();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.txtBoxCapacitateM = new System.Windows.Forms.TextBox();
+            this.txtBoxPret = new System.Windows.Forms.TextBox();
+            this.txtBoxHP = new System.Windows.Forms.TextBox();
+            this.txtBoxAnFab = new System.Windows.Forms.TextBox();
+            this.btnSterge = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMasini)).BeginInit();
             this.grbDateM.SuspendLayout();
             this.SuspendLayout();
@@ -116,69 +117,14 @@
             this.grbDateM.TabStop = false;
             this.grbDateM.Text = "Datele Masini";
             // 
-            // txtBoxAnFab
+            // lblHP
             // 
-            this.txtBoxAnFab.Location = new System.Drawing.Point(508, 23);
-            this.txtBoxAnFab.Name = "txtBoxAnFab";
-            this.txtBoxAnFab.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxAnFab.TabIndex = 5;
-            // 
-            // txtBoxHP
-            // 
-            this.txtBoxHP.Location = new System.Drawing.Point(508, 64);
-            this.txtBoxHP.Name = "txtBoxHP";
-            this.txtBoxHP.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxHP.TabIndex = 6;
-            // 
-            // txtBoxPret
-            // 
-            this.txtBoxPret.Location = new System.Drawing.Point(286, 64);
-            this.txtBoxPret.Name = "txtBoxPret";
-            this.txtBoxPret.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxPret.TabIndex = 7;
-            // 
-            // txtBoxCapacitateM
-            // 
-            this.txtBoxCapacitateM.Location = new System.Drawing.Point(109, 64);
-            this.txtBoxCapacitateM.Name = "txtBoxCapacitateM";
-            this.txtBoxCapacitateM.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxCapacitateM.TabIndex = 8;
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(40, 29);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(37, 13);
-            this.lblMarca.TabIndex = 9;
-            this.lblMarca.Text = "Marca";
-            // 
-            // lblModel
-            // 
-            this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(244, 30);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(36, 13);
-            this.lblModel.TabIndex = 10;
-            this.lblModel.Text = "Model";
-            // 
-            // lblAnFabricatie
-            // 
-            this.lblAnFabricatie.AutoSize = true;
-            this.lblAnFabricatie.Location = new System.Drawing.Point(433, 29);
-            this.lblAnFabricatie.Name = "lblAnFabricatie";
-            this.lblAnFabricatie.Size = new System.Drawing.Size(69, 13);
-            this.lblAnFabricatie.TabIndex = 11;
-            this.lblAnFabricatie.Text = "An-Fabricatie";
-            // 
-            // lblCP
-            // 
-            this.lblCP.AutoSize = true;
-            this.lblCP.Location = new System.Drawing.Point(15, 71);
-            this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(88, 13);
-            this.lblCP.TabIndex = 12;
-            this.lblCP.Text = "Capacitate Motor";
+            this.lblHP.AutoSize = true;
+            this.lblHP.Location = new System.Drawing.Point(434, 71);
+            this.lblHP.Name = "lblHP";
+            this.lblHP.Size = new System.Drawing.Size(68, 13);
+            this.lblHP.TabIndex = 14;
+            this.lblHP.Text = "Horse Power";
             // 
             // lblPret
             // 
@@ -189,20 +135,86 @@
             this.lblPret.TabIndex = 13;
             this.lblPret.Text = "Pretul";
             // 
-            // lblHP
+            // lblCP
             // 
-            this.lblHP.AutoSize = true;
-            this.lblHP.Location = new System.Drawing.Point(434, 71);
-            this.lblHP.Name = "lblHP";
-            this.lblHP.Size = new System.Drawing.Size(68, 13);
-            this.lblHP.TabIndex = 14;
-            this.lblHP.Text = "Horse Power";
+            this.lblCP.AutoSize = true;
+            this.lblCP.Location = new System.Drawing.Point(15, 71);
+            this.lblCP.Name = "lblCP";
+            this.lblCP.Size = new System.Drawing.Size(88, 13);
+            this.lblCP.TabIndex = 12;
+            this.lblCP.Text = "Capacitate Motor";
+            // 
+            // lblAnFabricatie
+            // 
+            this.lblAnFabricatie.AutoSize = true;
+            this.lblAnFabricatie.Location = new System.Drawing.Point(433, 29);
+            this.lblAnFabricatie.Name = "lblAnFabricatie";
+            this.lblAnFabricatie.Size = new System.Drawing.Size(69, 13);
+            this.lblAnFabricatie.TabIndex = 11;
+            this.lblAnFabricatie.Text = "An-Fabricatie";
+            // 
+            // lblModel
+            // 
+            this.lblModel.AutoSize = true;
+            this.lblModel.Location = new System.Drawing.Point(244, 30);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(36, 13);
+            this.lblModel.TabIndex = 10;
+            this.lblModel.Text = "Model";
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(40, 29);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.TabIndex = 9;
+            this.lblMarca.Text = "Marca";
+            // 
+            // txtBoxCapacitateM
+            // 
+            this.txtBoxCapacitateM.Location = new System.Drawing.Point(109, 64);
+            this.txtBoxCapacitateM.Name = "txtBoxCapacitateM";
+            this.txtBoxCapacitateM.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxCapacitateM.TabIndex = 8;
+            // 
+            // txtBoxPret
+            // 
+            this.txtBoxPret.Location = new System.Drawing.Point(286, 64);
+            this.txtBoxPret.Name = "txtBoxPret";
+            this.txtBoxPret.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxPret.TabIndex = 7;
+            // 
+            // txtBoxHP
+            // 
+            this.txtBoxHP.Location = new System.Drawing.Point(508, 64);
+            this.txtBoxHP.Name = "txtBoxHP";
+            this.txtBoxHP.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxHP.TabIndex = 6;
+            // 
+            // txtBoxAnFab
+            // 
+            this.txtBoxAnFab.Location = new System.Drawing.Point(508, 23);
+            this.txtBoxAnFab.Name = "txtBoxAnFab";
+            this.txtBoxAnFab.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxAnFab.TabIndex = 5;
+            // 
+            // btnSterge
+            // 
+            this.btnSterge.Location = new System.Drawing.Point(311, 414);
+            this.btnSterge.Name = "btnSterge";
+            this.btnSterge.Size = new System.Drawing.Size(100, 28);
+            this.btnSterge.TabIndex = 6;
+            this.btnSterge.Text = "Sterge";
+            this.btnSterge.UseVisualStyleBackColor = true;
+            this.btnSterge.Click += new System.EventHandler(this.btnSterge_Click);
             // 
             // Masiniform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSterge);
             this.Controls.Add(this.grbDateM);
             this.Controls.Add(this.btnAdauga);
             this.Controls.Add(this.btnIncarca);
@@ -235,5 +247,6 @@
         private System.Windows.Forms.Label lblHP;
         private System.Windows.Forms.Label lblPret;
         private System.Windows.Forms.Label lblCP;
+        private System.Windows.Forms.Button btnSterge;
     }
 }
